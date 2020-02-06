@@ -21,16 +21,16 @@ class time_tracker_controller extends Controller
     }
 
     public function clockin(){
-        // $now = new DateTime();
+        $now = new DateTime();
         // dd($now);
-        // $time = $now->getTimestamp();
-        // return view('timetracker', compact('time'));
+        $time = $now->getTimestamp();
+        return view('timetracker', compact('time'));
 
-        $timein = Carbon::now();
+        // $timein = Carbon::now();
         // dd($timein);
-        $diff = $timein->created_at->diffForHumans(null, true, true, 2);
+        // $diff = $timein['created_at']->diffForHumans(null, true, true, 2);
         // dd($diff);
-        echo str_replace(['h', 'm'], ['hrs', 'mins'], $diff);
+        // echo str_replace(['h', 'm'], ['hrs', 'mins'], $time);
     }
 
     public function clockout(){
