@@ -18,3 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/app', function () {
+    return view('timetracker');
+});
+
+Route::get('/names', 'time_tracker_controller@retrieve_names')->name('names');
+Route::get('/clockin', 'time_tracker_controller@clockin')->name('clockin');
