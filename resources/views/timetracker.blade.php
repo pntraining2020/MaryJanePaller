@@ -85,11 +85,6 @@
                             <input style="width:50%; margin-top:-5%; margin-left:21%;" class="form-control" type="time" name="clockin">
                         </div>
                         <hr>
-                        <div>
-                            <center>
-                                <button style="width:20%;" class="btn btn-primary">Take another break</button>
-                            </center>
-                        </div>
                         <hr>
                         <div>
                             <button  style="width:20%;" class="btn btn-primary">Clock out</button>
